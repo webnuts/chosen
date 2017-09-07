@@ -1,7 +1,7 @@
 class AbstractChosen
 
   constructor: (@form_field, @options={}) ->
-    return unless AbstractChosen.browser_is_supported()
+    # return unless AbstractChosen.browser_is_supported()
     @is_multiple = @form_field.multiple
     this.set_default_text()
     this.set_default_values()
